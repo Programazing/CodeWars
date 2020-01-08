@@ -12,7 +12,7 @@ namespace CodeWarsTests._8kyu
     {
         [Theory]
         [TestCase(2, 10, 2, new int[] { 2, 4, 6, 8, 10 })]
-        public void Test(int min, int max, int step, int[] actual)
+        public void GenerateRange_ShouldReturn_ExpectedArray(int min, int max, int step, int[] actual)
         {
             var sut = GenerateRangeOfIntegers.GenerateRange(min, max, step);
 
